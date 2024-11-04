@@ -1,6 +1,24 @@
 <meta charset="UTF-8">
 
 <script>
-    document.write("Manoela nasceu em " + (2024-19) + "<br>")
-    document.write("Flavio nasceu em " + (2024-47) + "<br>")
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(msg) {
+        document.write(msg);
+    }
+
+    var ano = 2024;
+    var idadeMano = 19, idadeFlavio = 47;
+
+    mostra("Manoela nasceu em " + (ano-idadeMano));
+    pulaLinha();
+    mostra("Flavio nasceu em " + (ano-idadeFlavio));
+    pulaLinha();
+
+    var media = (idadeMano + idadeFlavio)/2;
+
+    mostra("A média das idades é " + Math.round(media));
+
 </script>

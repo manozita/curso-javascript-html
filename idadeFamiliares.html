@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function space() {
+        document.write("<br><br>");
+    }
+    function show(msg) {
+        document.write(msg + "<br>");
+    }
+    function askForNumber(msg) {
+        return parseInt(prompt(msg));
+    }
+    function askForString(msg) {
+        return prompt(msg);
+    }
+    function calculateSum(quantity, msg) {
+        sum = 0;
+        for(var i = 1; i <= quantity; i++) {
+            sum += askForNumber(msg);
+        }
+        return sum;
+    }
+
+    var somaIdades, nFamiliares, media;
+
+    nFamiliares = askForNumber("Informe o número de familiares: ");
+    somaIdades = calculateSum(nFamiliares, "Informe a idade do familiar: ");
+
+    media = somaIdades/nFamiliares;
+
+    show("A média é: " + media);
+     
+</script>

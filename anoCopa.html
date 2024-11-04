@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(msg) {
+        document.write(msg + "<br>");
+    }
+    function askUser(msg) {
+        return prompt(msg);
+    }
+
+    var anoCopa = 1930;
+    var anoAtual = 2024;
+
+    while (anoCopa <= anoAtual) {
+        mostra("Teve copa em " + anoCopa);
+        anoCopa+=4;
+    }
+
+    
+
+</script>

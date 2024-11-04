@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function space() {
+        document.write("<br><br>");
+    }
+    function show(msg) {
+        document.write(msg);
+    }
+    function askForNumber(msg) {
+        return parseInt(prompt(msg));
+    }
+
+    for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 10; j++){
+            show("*");
+        }
+        space();
+    }
+
+</script>

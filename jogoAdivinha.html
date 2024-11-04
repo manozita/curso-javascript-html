@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function space() {
+        document.write("<br><br>");
+    }
+    function show(msg) {
+        document.write(msg + "<br>");
+    }
+    function askForNumber(msg) {
+        return parseInt(prompt(msg));
+    }
+
+    var nPensado, chute;
+    nPensado = Math.round(Math.random()*10);
+
+    do {
+        chute = askForNumber("Digite seu chute: ");
+        if (nPensado > chute)
+            alert("O número em que eu pensei é maior do que " + chute);
+        else if (nPensado < chute)
+            alert("O número em que eu pensei é menor do que " + chute);
+    } while (nPensado != chute);
+
+    show("Você acertou! Pensei no número " + chute);
+
+</script>

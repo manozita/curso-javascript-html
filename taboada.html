@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(msg) {
+        document.write(msg + "<br>");
+    }
+    function askUser(msg) {
+        return prompt(msg);
+    }
+
+    var fator = 3;
+
+    for (var i = 1; i <= 10; i++) {
+        mostra(fator + " * " + i + " = " + (fator*i));
+    }
+    
+
+</script>
